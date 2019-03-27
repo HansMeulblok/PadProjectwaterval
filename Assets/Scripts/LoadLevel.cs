@@ -9,7 +9,7 @@ public class LoadLevel : MonoBehaviour
 
     public void LoadScene  ()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Leveltest");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Level1");
     }
 
 }
