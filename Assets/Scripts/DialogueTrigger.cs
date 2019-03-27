@@ -5,6 +5,12 @@ using UnityEngine;
 public class DialogueTrigger : MonoBehaviour
 {
     public Dialogue dialogue;
+    public GameObject Convobutton;
+
+    public void Alert()
+    {
+        Convobutton.SetActive(false); 
+    }
 
     public void TriggerDialogue ()
     {
