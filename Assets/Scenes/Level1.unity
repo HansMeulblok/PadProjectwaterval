@@ -1405,8 +1405,9 @@ MonoBehaviour:
     name: koifish
     sentences:
     - Hey jij daar, Ik heb je hulp nodig !
-    - Mijn poel is verstoord omdat er te veel vissen in zitten.
-    - Voordat je mij kan helpen wil ik eerst jou helpen.
+    - De kwallen hebben de waterval geblokkeerd en nu kunnen de vissen niet verder
+      zwemmen!
+    - Maar voordat je mij helpt wil ik eerst jou helpen.
     - Geef aan hoeveel pijn je momenteel ervaart doormiddel van deze meter.
     - 
     - 'Nu ik jou heb geholpen is het voor jou tijd om mij te helpen ! '
