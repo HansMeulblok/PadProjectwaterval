@@ -39,6 +39,7 @@ public class DialogueManager : MonoBehaviour
         if (sentences.Count == 0)
         {
             EndDialogue();
+          
             return;
         }
 
@@ -46,6 +47,8 @@ public class DialogueManager : MonoBehaviour
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
     }
+
+   
 
     IEnumerator TypeSentence (string sentence)
         {
@@ -61,5 +64,7 @@ public class DialogueManager : MonoBehaviour
     {
         animator.SetBool("IsOpen", false);
     }
+
+    
 }
 

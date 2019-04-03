@@ -13,6 +13,6 @@ public class LoadLevel : MonoBehaviour
     }
     public void LoadGame1()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Game1");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Scene_01");
     }
 }
