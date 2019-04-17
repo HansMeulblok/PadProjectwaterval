@@ -39,11 +39,9 @@ public class Player_Script : MonoBehaviour
 	void Update () 
 	{
 		//Excute When the Current Time is bigger than the nextFire time
-		if (Time.time > nextFire) 
+		if (Input.GetKey(KeyCode.Space) && nextFire >= 0.5) 
 		{
-			nextFire = Time.time + fireRate; 								//Increment nextFire time with the current system time + fireRate
-			Instantiate (shot , shotSpawn.position ,shotSpawn.rotation); 	//Instantiate fire shot 
-			GetComponent<AudioSource>().Play (); 													//Play Fire sound
+            Fire();
 		}
 	}
 
@@ -54,7 +52,8 @@ public class Player_Script : MonoBehaviour
 		float moveVertical = Input.GetAxis ("Vertical");					//Get if Any Vertical Keys pressed
 		Vector2 movement = new Vector2 (moveHorizontal, moveVertical); 		//Put them in a Vector2 Variable (x,y)
 		GetComponent<Rigidbody2D>().velocity = movement * speed; 							//Add Velocity to the player ship rigidbody
-
+        if (nextFire < 0.5)
+            nextFire += Time.fixedDeltaTime;
 		//Lock the position in the screen by putting a boundaries
 		GetComponent<Rigidbody2D>().position = new Vector2 
 			(
@@ -74,4 +73,10 @@ public class Player_Script : MonoBehaviour
 			Destroy(gameObject); 															//Destroy Player Ship Object
 		}
 	}
+    void Fire()
+    {
+        nextFire = 0;
+        Instantiate(shot, shotSpawn.position, shotSpawn.rotation);  //Instantiate fire shot 
+        GetComponent<AudioSource>().Play();
+    }
 }

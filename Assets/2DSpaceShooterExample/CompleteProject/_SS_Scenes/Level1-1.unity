@@ -10184,8 +10184,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   asteroid:
     asteroidBigObj: {fileID: 100000, guid: 17e2d1de305834503adc5a87d7d05b8b, type: 3}
-    Count: 8
-    SpawnWait: 0
+    Count: 2
+    SpawnWait: 1
     StartWait: 2
     WaveWait: 2
   enemyBlue:
