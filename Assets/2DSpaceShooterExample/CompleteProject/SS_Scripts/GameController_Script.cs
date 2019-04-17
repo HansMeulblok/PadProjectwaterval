@@ -64,10 +64,10 @@ public class GameController_Script : MonoBehaviour
 	public EnemyBlue enemyBlue;			//make an Object from Class enemyBlue
 	public EnemyGreen enemyGreen;		//make an Object from Class enemyGreen
 	public EnemyRed enemyRed;			//make an Object from Class enemyRed
-	public Vector2 spawnValues;			//Store spawning (x,y) values
+	public Vector2 spawnValues;         //Store spawning (x,y) values
 
-	// Use this for initialization
-	void Start ()
+    // Use this for initialization
+    public virtual void Start ()
 	{
 		StartCoroutine (asteroidSpawnWaves());  	//Start IEnumerator function
 		StartCoroutine (enemyBlueSpawnWaves());		//Start IEnumerator function
@@ -76,7 +76,7 @@ public class GameController_Script : MonoBehaviour
 	}
 
 	// Update is called once per frame
-	void Update () 
+	public virtual void Update () 
 	{
 		//Excute when keyboard button R pressed
 		if(Input.GetKey("r"))
@@ -87,11 +87,10 @@ public class GameController_Script : MonoBehaviour
         {
             UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
         }
-
     }
 
-	//Asteroid IEnumerator Coroutine
-	IEnumerator asteroidSpawnWaves()
+    //Asteroid IEnumerator Coroutine
+    public virtual IEnumerator asteroidSpawnWaves()
 	{
 		yield return new WaitForSeconds (asteroid.StartWait); 															//Wait for Seconds before start the wave
 
@@ -110,8 +109,8 @@ public class GameController_Script : MonoBehaviour
 		}
 	}
 
-	//EnemyBlue IEnumerator Coroutine
-	IEnumerator enemyBlueSpawnWaves()
+    //EnemyBlue IEnumerator Coroutine
+    public virtual IEnumerator enemyBlueSpawnWaves()
 	{
 		yield return new WaitForSeconds (enemyBlue.StartWait);															//Wait for Seconds before start the wave
 
@@ -130,8 +129,8 @@ public class GameController_Script : MonoBehaviour
 		}
 	}
 
-	//EnemyGreen IEnumerator Coroutine
-	IEnumerator enemyGreenSpawnWaves()
+    //EnemyGreen IEnumerator Coroutine
+    public virtual IEnumerator enemyGreenSpawnWaves()
 	{
 		yield return new WaitForSeconds (enemyGreen.StartWait);															//Wait for Seconds before start the wave
 
@@ -150,8 +149,8 @@ public class GameController_Script : MonoBehaviour
 		}
 	}
 
-	//EnemyRed IEnumerator Coroutine
-	IEnumerator enemyRedSpawnWaves()
+    //EnemyRed IEnumerator Coroutine
+    public virtual IEnumerator enemyRedSpawnWaves()
 	{
 		yield return new WaitForSeconds (enemyRed.StartWait);															//Wait for Seconds before start the wave
 
