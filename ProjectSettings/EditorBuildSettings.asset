@@ -21,6 +21,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Game1.unity
     guid: 850e7e5646dfe0f42b87d30be39623fc
   - enabled: 1
-    path: Assets/2DSpaceShooterExample/CompleteProject/_SS_Scenes/Scene_01.unity
+    path: Assets/SquidMiniGame/CompleteProject/_SS_Scenes/Scene_01.unity
     guid: ed3bd0e40cb5e46dcb30a1f1ccf56ba2
   m_configObjects: {}
