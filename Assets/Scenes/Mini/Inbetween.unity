@@ -190,7 +190,7 @@ GameObject:
   - component: {fileID: 210272983}
   - component: {fileID: 210272982}
   m_Layer: 5
-  m_Name: Text (1)
+  m_Name: Naam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -210,10 +210,10 @@ RectTransform:
   m_Father: {fileID: 1612466616}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -111, y: -17.5}
-  m_SizeDelta: {x: 331.8, y: 35}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 373.3, y: -25.45}
+  m_SizeDelta: {x: 148.5, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &210272982
 MonoBehaviour:
@@ -237,10 +237,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: eb14aee7ebc2152478425affe95e54c1, type: 3}
-    m_FontSize: 20
+    m_FontSize: 8
     m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 1
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -293,8 +293,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -163.4, y: -216.35}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -78.6, y: -91.99}
+  m_SizeDelta: {x: 155.4, y: 29.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &226857586
 MonoBehaviour:
@@ -418,10 +418,10 @@ RectTransform:
   m_Father: {fileID: 1612466616}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -193.65, y: -136}
-  m_SizeDelta: {x: 387.3, y: 130.7}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 320.5, y: -90.9}
+  m_SizeDelta: {x: 165.4, y: 113.16}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &687471484
 MonoBehaviour:
@@ -445,7 +445,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: eb14aee7ebc2152478425affe95e54c1, type: 3}
-    m_FontSize: 20
+    m_FontSize: 7
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
@@ -758,8 +758,8 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
-  m_ReferencePixelsPerUnit: 100
+  m_UiScaleMode: 1
+  m_ReferencePixelsPerUnit: 247.65
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
