@@ -10340,7 +10340,7 @@ MonoBehaviour:
     StartWait: 0
     WaveWait: 0
   spawnValues: {x: 3, y: 6}
-  victorTime: 20
+  victorTime: 30
 --- !u!4 &1448049119
 Transform:
   m_ObjectHideFlags: 0

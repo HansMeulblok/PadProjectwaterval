@@ -29,7 +29,7 @@ public class PainMeterActive : MonoBehaviour
         if (counter == 6)
         {
 
-            UnityEngine.SceneManagement.SceneManager.LoadScene("Scene_01");
+            UnityEngine.SceneManagement.SceneManager.LoadScene("Level1-1");
         }
 
 

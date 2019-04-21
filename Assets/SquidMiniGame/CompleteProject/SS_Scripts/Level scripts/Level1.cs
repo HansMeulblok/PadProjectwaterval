@@ -10,11 +10,12 @@ public class Level1 : GameController_Script
     public override void Start()
     {
         StartCoroutine(asteroidSpawnWaves());
+        PlayerPrefs.SetInt("Level", 5);
     }
     public void FixedUpdate()
     {
         countTime += Time.fixedDeltaTime;
         if(countTime >= victorTime)
-            UnityEngine.SceneManagement.SceneManager.LoadScene("Scene_01");
+            UnityEngine.SceneManagement.SceneManager.LoadScene("Inbetween");
     }
 }
