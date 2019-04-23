@@ -35,12 +35,15 @@ public class SharedValues_Script : MonoBehaviour
 	// Fixed Update is called one per specific time
 	void FixedUpdate ()
 	{
-		scoreText.text = "Score: " + score; 			//Update the GUI Score
-
+        if (gameover == false && scoreText != null)
+        {
+            scoreText.text = "Score: " + score;             //Update the GUI Score
+        }
 		//Excute when the GameOver Trigger is True
 		if (gameover == true)
 		{
 			GameOverText.text = "GAME OVER"; 			//Show GUI GameOver
+            if(FinalScoreText != null)
 			FinalScoreText.text = "" + score; 			//Show GUI FinalScore
 			ReplayText.text = "PRESS R TO REPLAY OR PRESS ESC TO RETURN TO MENU"; 		//Show GUI Replay
 		}

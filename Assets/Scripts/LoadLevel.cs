@@ -13,6 +13,11 @@ public class LoadLevel : MonoBehaviour
     }
     public void LoadGame1()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Scene_01");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Level1-1");
+    }
+    public void LoadNextLevel()
+    {
+        PlayerPrefs.SetInt("Level", PlayerPrefs.GetInt("Level")+1);
+        SceneManager.LoadScene(PlayerPrefs.GetInt("Level") - 1);
     }
 }

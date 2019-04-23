@@ -212,8 +212,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -40.9, y: -5.9}
-  m_SizeDelta: {x: 135.89, y: 30.01}
+  m_AnchoredPosition: {x: -60.52, y: -5.29}
+  m_SizeDelta: {x: 237.9, y: 26.86}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &306417301
 MonoBehaviour:
@@ -248,7 +248,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'name
+  m_Text: 'Kay de Karper
 
 '
 --- !u!222 &306417302
@@ -527,7 +527,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.5
-  m_Text: hi gay im dad
+  m_Text: hi
 --- !u!222 &593988051
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1285,7 +1285,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.45200002, y: 0.47000003}
   m_AnchorMax: {x: 0.45200002, y: 0.47000003}
-  m_AnchoredPosition: {x: -290.4, y: -152.7}
+  m_AnchoredPosition: {x: -290.40002, y: -152.7}
   m_SizeDelta: {x: 103.91, y: 20.49}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1914862497
@@ -1402,7 +1402,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: koifish
+    name: Kay de Karper
     sentences:
     - Hey jij daar, Ik heb je hulp nodig !
     - De kwallen hebben de waterval geblokkeerd en nu kunnen de vissen niet verder

@@ -81,7 +81,11 @@ public class GameController_Script : MonoBehaviour
 		//Excute when keyboard button R pressed
 		if(Input.GetKey("r"))
 		{
-            UnityEngine.SceneManagement.SceneManager.LoadScene("Scene_01");		//Load Level 4 (same Level) to make a restart
+            if(PlayerPrefs.GetInt("Level") == 5)
+            {
+                UnityEngine.SceneManagement.SceneManager.LoadScene(4);
+            }else
+            UnityEngine.SceneManagement.SceneManager.LoadScene(PlayerPrefs.GetInt("Level")-1);		//Load Level 4 (same Level) to make a restart
 		}
         if (Input.GetKey(KeyCode.Escape))
         {
