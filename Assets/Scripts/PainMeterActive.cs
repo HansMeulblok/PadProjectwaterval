@@ -6,8 +6,6 @@ public class PainMeterActive : MonoBehaviour
 {
     int counter = 0;
     public GameObject Gauge1;
-    public GameObject textBox;
-
 
     public void ButtonClick()
     {
@@ -22,12 +20,10 @@ public class PainMeterActive : MonoBehaviour
         {
            
             Gauge1.SetActive(true);
-            
-       
         }
         if (counter == 5)
         {
-            textBox.SetActive(false);
+
             Gauge1.SetActive(false);
         }
         if (counter == 6)

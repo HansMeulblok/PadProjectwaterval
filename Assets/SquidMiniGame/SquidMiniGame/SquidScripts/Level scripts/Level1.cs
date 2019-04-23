@@ -6,9 +6,9 @@ using UnityEngine.UI;
 public class Level1 : GameController_Script
 {
 
-    public float victorTime = 40.0f;
+    public float victorTime = 200.0f;
 
-   
+    public float victorTime = 20.0f;
     public Text text;
     public GameObject arrowKeys;
 
