@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Level1 : GameController_Script
 {
-    public float victorTime = 20.0f;
+    public float victorTime = 200.0f;
     private float countTime = 0;
     // Start is called before the first frame update
     public override void Start()
