@@ -135,10 +135,10 @@ MonoBehaviour:
   maxTumble: 12
   minTumble: 7
   speed: 2
-  health: 2
+  health: 5
   LaserGreenHit: {fileID: 400000, guid: 7843e77eb83984643ab054e4814aff64, type: 3}
   Explosion: {fileID: 100004, guid: 2857e183f4cd3df4e9096e5b578bd32f, type: 3}
-  ScoreValue: 10
+  ScoreValue: 0
 --- !u!95 &2557850869494565158
 Animator:
   serializedVersion: 3

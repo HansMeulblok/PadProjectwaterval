@@ -137,7 +137,7 @@ MonoBehaviour:
   health: 2
   LaserGreenHit: {fileID: 100000, guid: 7843e77eb83984643ab054e4814aff64, type: 3}
   Explosion: {fileID: 100012, guid: 384371afbb4354cc9a3fc68eab303756, type: 3}
-  ScoreValue: 25
+  ScoreValue: 2
   shot: {fileID: 100000, guid: 2e2882df2608647fd8249e42e7494c1a, type: 3}
   shotSpawn: {fileID: 400002}
   fireRate: 2
