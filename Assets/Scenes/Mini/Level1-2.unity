@@ -941,7 +941,7 @@ MonoBehaviour:
   spawnValues: {x: 3, y: 6}
   VictoryText: {fileID: 516083257}
   ContinueText: {fileID: 1761624726}
-  victorScore: 10
+  victorScore: 1
   text: {fileID: 953914484}
   Spatie: {fileID: 109706418}
 --- !u!82 &1122116788

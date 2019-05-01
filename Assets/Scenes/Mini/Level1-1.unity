@@ -10611,7 +10611,7 @@ MonoBehaviour:
     StartWait: 0
     WaveWait: 0
   spawnValues: {x: 3, y: 6}
-  victorTime: 30
+  victorTime: 5
   text: {fileID: 352559134}
   arrowKeys: {fileID: 572806930}
 --- !u!4 &1448049119

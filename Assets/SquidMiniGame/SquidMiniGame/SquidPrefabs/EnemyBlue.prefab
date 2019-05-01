@@ -132,7 +132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59c7410de29164ff6af3d1e1fa656861, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 1.5
   health: 2
   LaserGreenHit: {fileID: 100000, guid: 7843e77eb83984643ab054e4814aff64, type: 3}
   Explosion: {fileID: 100012, guid: 384371afbb4354cc9a3fc68eab303756, type: 3}
