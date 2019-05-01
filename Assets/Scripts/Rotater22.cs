@@ -13,57 +13,69 @@ public class Rotater22 : MonoBehaviour
 
     public Text Pijndisplay;
 
+    public Rigidbody2D PivotPoint_Rigidbody;
+
+    public bool StopRotating = false; 
 
     public void Start()
     {
-        
+        PivotPoint_Rigidbody = GetComponent<Rigidbody2D>();
         z = transform.localEulerAngles.z;
-        
-    
+
+
     }
+
 
     public virtual void Update()
     {
+
+        if (Input.GetMouseButtonDown(0))
+        {
+
+            StopRotating = true;
+
+        }
         min = -180;
-        max = 0;
-      
-        speed = 0.2f;
+            max = 0;    
+            speed = 0.2f;
+    
+            var vertical = Input.GetAxis("Mouse Y");
+            z -= vertical * speed;
+            z = Mathf.Clamp(z, min, max);
+     
 
+            if ((z < max && z > min) && !StopRotating)
+            {
+                transform.localEulerAngles = new Vector3(0, 0, z);
 
-        var vertical = Input.GetAxis("Mouse Y");
-        z -= vertical * speed;
-        z = Mathf.Clamp(z, min, max);
+           
 
+            
 
-        if (z < max && z > min)
-        {
-            transform.localEulerAngles = new Vector3(0, 0, z);
-            Debug.Log(transform.localEulerAngles.z);
+            if (transform.localEulerAngles.z <= 360 && transform.localEulerAngles.z >= 300)
+            {
+                Pijndisplay.transform.rotation = Quaternion.identity;
 
+                Pijndisplay.text = "weinig pijn";
 
-        
+            }
+
+            if (transform.localEulerAngles.z <= 300 && transform.localEulerAngles.z >= 240)
+            {
+                Pijndisplay.transform.rotation = Quaternion.identity;
+
+                Pijndisplay.text = "middelmatige pijn";
+            }
+
+            if (transform.localEulerAngles.z <= 240 && transform.localEulerAngles.z >= 180)
+            {
+                Pijndisplay.transform.rotation = Quaternion.identity;
+
+                Pijndisplay.text = "heftige pijn";
+            }
+
         }
-        if (transform.localEulerAngles.z <= 359 && transform.localEulerAngles.z >= 300)
-        {
-            Pijndisplay.transform.rotation = Quaternion.identity;
-            Debug.Log("weinig pijn");
-            Pijndisplay.text = "weinig pijn";
 
-        }
-
-        if (transform.localEulerAngles.z <= 299 && transform.localEulerAngles.z >= 240)
-        {
-            Pijndisplay.transform.rotation = Quaternion.identity;
-            Debug.Log("middelmatige pijn");
-            Pijndisplay.text = "middelmatige pijn";
-        }
-
-        if (transform.localEulerAngles.z <= 239 && transform.localEulerAngles.z >= 180)
-        {
-            Pijndisplay.transform.rotation = Quaternion.identity;
-            Debug.Log("heftige pijn");
-            Pijndisplay.text = "heftige pijn";
-        }
 
 
 

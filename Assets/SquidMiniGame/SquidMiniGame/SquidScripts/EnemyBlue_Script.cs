@@ -21,25 +21,34 @@ public class EnemyBlue_Script : MonoBehaviour
 	public GameObject LaserGreenHit; //LaserGreenHit Prefab
 	public GameObject Explosion; //Explosion Prefab
 	public int ScoreValue; //How much the Enemy Ship give score after explosion
+    SpriteRenderer BlueEnemy_SpriteRenderer;
 
-	// Use this for initialization
-	void Start () 
+
+    // Use this for initialization
+    void Start () 
 	{
-		GetComponent<Rigidbody2D>().velocity = -1 * transform.up * speed; //Enemy Ship Movement
-	}
+		GetComponent<Rigidbody2D>().velocity = -1 * transform.up * speed; //Enemy Movement
+        BlueEnemy_SpriteRenderer = GetComponent<SpriteRenderer>();
+        BlueEnemy_SpriteRenderer.color = Color.white;
+    }
 
 	//Called when the Trigger entered
 	void OnTriggerEnter2D(Collider2D other)
 	{
-		//Excute if the object tag was equal to one of these
-		if(other.tag == "PlayerLaser")
+    
+        //Excute if the object tag was equal to one of these
+        if (other.tag == "PlayerLaser")
 		{
-			Instantiate (LaserGreenHit, transform.position , transform.rotation); 			//Instantiate LaserGreenHit 
+           
+            Instantiate (LaserGreenHit, transform.position , transform.rotation); 			//Instantiate LaserGreenHit 
 			Destroy(other.gameObject); 														//Destroy the Other (PlayerLaser)
 			
 			//Check the Health if greater than 0
 			if(health > 0)
-				health--; 																	//Decrement Health by 1
+				health--;                                                                   //Decrement Health by 1
+            BlueEnemy_SpriteRenderer.color = new Color(0.278f, 0.294f, 0.419f,1f);
+        
+
 
 			//Check the Health if less or equal 0
 			if(health <= 0)

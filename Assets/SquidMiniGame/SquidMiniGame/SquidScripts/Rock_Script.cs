@@ -13,7 +13,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class Asteroid_Script : MonoBehaviour 
+public class Rock_Script : MonoBehaviour 
 {
 	//Public Var
 	public float maxTumble; 			//Maximum Speed of the angular velocity
@@ -22,14 +22,16 @@ public class Asteroid_Script : MonoBehaviour
 	public int health; 					//Asteroid Health (how much hit can it take)
 	public GameObject LaserGreenHit; 	//LaserGreenHit Prefab
 	public GameObject Explosion; 		//Explosion Prefab
-	public int ScoreValue; 				//How much the Asteroid give score after explosion
+	public int ScoreValue;              //How much the Asteroid give score after explosion
 
-	// Use this for initialization
-	void Start () 
+
+    // Use this for initialization
+    void Start () 
 	{
 		//GetComponent<Rigidbody2D>().angularVelocity = Random.Range(minTumble, maxTumble); 		//Angular movement based on random speed values
 		GetComponent<Rigidbody2D>().velocity = -1 * transform.up * speed; 						//Negative Velocity to move down towards the player ship
-	}
+   
+    }
 
 	//Called when the Trigger entered
 	void OnTriggerEnter2D(Collider2D other)
@@ -42,10 +44,11 @@ public class Asteroid_Script : MonoBehaviour
 
 			//Check the Health if greater than 0
 			if(health > 0)
-				health--; 																//Decrement Health by 1
+				health--;                                                               //Decrement Health by 1
+           
 
-			//Check the Health if less or equal 0
-			if(health <= 0)
+            //Check the Health if less or equal 0
+            if (health <= 0)
 			{
 				Instantiate (Explosion, transform.position , transform.rotation); 		//Instantiate Explosion
 				SharedValues_Script.score +=ScoreValue; 								//Increment score by ScoreValue

@@ -6,12 +6,21 @@ public class PainMeterActive : MonoBehaviour
 {
     int counter = 0;
     public GameObject Gauge1;
+    public GameObject ContinueButton; 
 
     public void ButtonClick()
     {
         counter++;
         Debug.Log(counter);
-        Update(); 
+        Update();
+
+        if (Gauge1.activeInHierarchy)
+        {
+            ContinueButton.SetActive(false);
+
+        }
+
+
     }
 
     void Update()
@@ -20,6 +29,7 @@ public class PainMeterActive : MonoBehaviour
         {
            
             Gauge1.SetActive(true);
+            
         }
         if (counter == 5)
         {
@@ -32,6 +42,11 @@ public class PainMeterActive : MonoBehaviour
             UnityEngine.SceneManagement.SceneManager.LoadScene("Level1-1");
         }
 
+       
+        if (Input.GetMouseButtonDown(0))
+        {
+            ContinueButton.SetActive(true);
+        }
 
     }
 }

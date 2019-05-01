@@ -20,6 +20,6 @@ public class PlayerShipShots_Script : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-		GetComponent<Rigidbody2D>().velocity = transform.up * speed; //Give Velocity to the Player ship shot
+		GetComponent<Rigidbody2D>().velocity = transform.up * speed; //Give Velocity to the Player squid shot
 	}
 }
