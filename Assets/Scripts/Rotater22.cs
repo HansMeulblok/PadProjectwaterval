@@ -35,9 +35,19 @@ public class Rotater22 : MonoBehaviour
             StopRotating = true;
 
         }
+
+        if (Input.GetMouseButtonDown(1))
+        {
+
+            StopRotating = false;
+
+        }
+
+
+
         min = -180;
             max = 0;    
-            speed = 0.2f;
+            speed = 6f;
     
             var vertical = Input.GetAxis("Mouse Y");
             z -= vertical * speed;

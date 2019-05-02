@@ -48,5 +48,10 @@ public class PainMeterActive : MonoBehaviour
             ContinueButton.SetActive(true);
         }
 
+        if (Input.GetMouseButtonDown(1))
+        {
+            ContinueButton.SetActive(false);
+        }
+
     }
 }
