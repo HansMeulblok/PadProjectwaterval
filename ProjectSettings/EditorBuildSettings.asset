@@ -19,7 +19,7 @@ EditorBuildSettings:
     guid: b8b7b740dcd978a49ae284f191cd3a8a
   - enabled: 0
     path: 
-    guid: 850e7e5646dfe0f42b87d30be39623fc
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/SquidMiniGame/SquidMiniGame/SquidLevels/Scene_01.unity
     guid: ed3bd0e40cb5e46dcb30a1f1ccf56ba2
@@ -41,4 +41,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Mini/Level1/Level1-5.unity
     guid: aa93e0d2d52dabe439213bdf00856ecc
+  - enabled: 1
+    path: Assets/Scenes/Mini/Level2/Level2-1.unity
+    guid: f9b212a831210f84690b70dab5d98407
+  - enabled: 1
+    path: Assets/Scenes/Mini/Level2/Level2-2.unity
+    guid: 5b5f8452f1d873443be491981811f2e0
   m_configObjects: {}
