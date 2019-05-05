@@ -10,7 +10,6 @@ public class PlayerController : MonoBehaviour
     public float movement;
     private float moving;
     public float shoot;
-    private bool shooting = false;
     private Rigidbody2D rigid;
     Vector3 velocity;
     public GameObject Bullet;

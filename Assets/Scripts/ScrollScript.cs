@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ScrollScript : MonoBehaviour
 {
-    float scrollSpeed = -0.5f;
+    float scrollSpeed = 0.5f;
     Vector2 startPos;
     void Start()
     {

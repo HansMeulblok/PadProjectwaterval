@@ -2005,7 +2005,7 @@ MonoBehaviour:
   min: 0
   max: 0
   z: 0
-  Pijndisplay: {fileID: 0}
+  Pijndisplay: {fileID: 1696110200}
   PivotPoint_Rigidbody: {fileID: 1996774169}
   StopRotating: 0
 --- !u!50 &1996774169

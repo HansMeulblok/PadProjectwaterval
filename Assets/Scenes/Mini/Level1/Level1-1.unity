@@ -259,7 +259,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 00:30
+  m_Text: 01:00
 --- !u!222 &352559135
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10588,10 +10588,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   asteroid:
     asteroidBigObj: {fileID: 100000, guid: 17e2d1de305834503adc5a87d7d05b8b, type: 3}
-    Count: 2
-    SpawnWait: 1
+    Count: 1
+    SpawnWait: 3
     StartWait: 2
-    WaveWait: 2
+    WaveWait: 3
   enemyBlue:
     enemyBlueObj: {fileID: 0}
     Count: 0
@@ -10611,7 +10611,7 @@ MonoBehaviour:
     StartWait: 0
     WaveWait: 0
   spawnValues: {x: 3, y: 6}
-  victorTime: 30
+  victorTime: 59
   text: {fileID: 352559134}
   arrowKeys: {fileID: 572806930}
 --- !u!4 &1448049119
