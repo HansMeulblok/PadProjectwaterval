@@ -19,15 +19,12 @@ public class EnemyRed_Script : MonoBehaviour
 	//Public Var
 	public float speed;						//Enemy Ship Speed
 	public int health;						//Enemy Ship Health
-	public GameObject LaserGreenHit;		//LaserGreenHit Prefab
-	public GameObject Explosion;			//Explosion Prefab
-	public int ScoreValue;					//How much the Enemy Ship give score after explosion
     public Boundary boundary;               //make an Object from Class Boundary
     Vector2 bounce = new Vector2(-1, 1);
     bool right;
-
-    //Private Var
-    private float nextFire = 0.0F;			//First fire & Next fire Time
+	public GameObject Explosion;
+    public Boundary boundary;                 //Explosion Prefab
+    public int ScoreValue;					//How much the enemy give score after explosion
 
 	// Use this for initialization
 	void Start () 
@@ -42,7 +39,6 @@ public class EnemyRed_Script : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-		//Excute When the Current Time is bigger than the nextFire time
 
         if(GetComponent<Rigidbody2D>().position.x <= boundary.xMin || GetComponent<Rigidbody2D>().position.x >= boundary.xMax)
         {
