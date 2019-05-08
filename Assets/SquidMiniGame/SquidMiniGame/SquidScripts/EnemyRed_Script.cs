@@ -22,33 +22,36 @@ public class EnemyRed_Script : MonoBehaviour
 	public GameObject LaserGreenHit;		//LaserGreenHit Prefab
 	public GameObject Explosion;			//Explosion Prefab
 	public int ScoreValue;					//How much the Enemy Ship give score after explosion
-	public GameObject shot;					//Fire Prefab
-	public Transform shotSpawn;				//Where the Fire Spawn
-	public float fireRate = 0.5F;			//Fire Rate between Shots
+    public Boundary boundary;               //make an Object from Class Boundary
+    Vector2 bounce = new Vector2(-1, 1);
+    bool right;
 
-	//Private Var
-	private float nextFire = 0.0F;			//First fire & Next fire Time
+    //Private Var
+    private float nextFire = 0.0F;			//First fire & Next fire Time
 
 	// Use this for initialization
 	void Start () 
 	{
-		GetComponent<Rigidbody2D>().velocity = -1 * transform.up * speed;	//Enemy Ship Movement
-	}
+        right = (Random.value > 0.5f);
+        if (right)
+		    GetComponent<Rigidbody2D>().velocity =new Vector2( -1 * speed, -1 * speed);
+        else
+            GetComponent<Rigidbody2D>().velocity = new Vector2(speed, -1 * speed);
+    }
 
 	// Update is called once per frame
 	void Update () 
 	{
 		//Excute When the Current Time is bigger than the nextFire time
-		if (Time.time > nextFire)
-		{
-			nextFire = Time.time + fireRate; 									//Increment nextFire time with the current system time + fireRate
-			Instantiate (shot , shotSpawn.position ,shotSpawn.rotation); 		//Instantiate fire shot 
-			GetComponent<AudioSource>().Play ();														//Play Fire sound
-		}
-	}
 
-	//Called when the Trigger entered
-	void OnTriggerEnter2D(Collider2D other)
+        if(GetComponent<Rigidbody2D>().position.x <= boundary.xMin || GetComponent<Rigidbody2D>().position.x >= boundary.xMax)
+        {
+            GetComponent<Rigidbody2D>().velocity *= bounce;
+        }
+    }
+
+    //Called when the Trigger entered
+    void OnTriggerEnter2D(Collider2D other)
 	{
 		//Excute if the object tag was equal to one of these
 		if(other.tag == "PlayerLaser")

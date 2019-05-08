@@ -308,12 +308,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 516083255}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.5, y: 0.65, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 970791589}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!132 &516083257
 GUIText:
@@ -560,8 +560,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 6.89, y: -25.44}
-  m_SizeDelta: {x: 47.6, y: 30}
+  m_AnchoredPosition: {x: 33.6, y: -25.3}
+  m_SizeDelta: {x: 106.32, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &953914484
 MonoBehaviour:
@@ -596,9 +596,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '10
-
-'
+  m_Text: 20
 --- !u!222 &953914485
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -706,8 +704,8 @@ Transform:
   m_Children:
   - {fileID: 1964405261}
   - {fileID: 1821126835}
-  - {fileID: 516083256}
   - {fileID: 1761624725}
+  - {fileID: 516083256}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -848,16 +846,16 @@ MonoBehaviour:
     WaveWait: 0
   enemyBlue:
     enemyBlueObj: {fileID: 100000, guid: 5f78677f7bc82419892779d27c9f79c0, type: 3}
-    Count: 4
-    SpawnWait: 2
-    StartWait: 4
-    WaveWait: 1
+    Count: 1
+    SpawnWait: 0
+    StartWait: 3
+    WaveWait: 4
   enemyGreen:
     enemyGreenObj: {fileID: 100000, guid: 8a4fbd2c6fc1a4097909290d814890f3, type: 3}
-    Count: 0
+    Count: 1
     SpawnWait: 0
-    StartWait: 0
-    WaveWait: 0
+    StartWait: 3
+    WaveWait: 6
   enemyRed:
     enemyRedObj: {fileID: 100000, guid: 2c6a51861d651441dbe2f230220bff07, type: 3}
     Count: 0
@@ -865,9 +863,9 @@ MonoBehaviour:
     StartWait: 0
     WaveWait: 0
   spawnValues: {x: 3, y: 6}
-  VictoryText: {fileID: 516083257}
-  ContinueText: {fileID: 1761624726}
-  victorScore: 15
+  VictoryText: {fileID: 1761624726}
+  ContinueText: {fileID: 516083257}
+  victorScore: 20
   text: {fileID: 953914484}
 --- !u!82 &1122116788
 AudioSource:
@@ -1218,7 +1216,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 970791589}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!132 &1761624726
 GUIText:
