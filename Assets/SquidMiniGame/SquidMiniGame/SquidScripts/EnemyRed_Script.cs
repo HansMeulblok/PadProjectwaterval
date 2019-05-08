@@ -23,7 +23,6 @@ public class EnemyRed_Script : MonoBehaviour
     Vector2 bounce = new Vector2(-1, 1);
     bool right;
 	public GameObject Explosion;
-    public Boundary boundary;                 //Explosion Prefab
     public int ScoreValue;					//How much the enemy give score after explosion
 
 	// Use this for initialization
@@ -52,7 +51,7 @@ public class EnemyRed_Script : MonoBehaviour
 		//Excute if the object tag was equal to one of these
 		if(other.tag == "PlayerLaser")
 		{
-			Instantiate (LaserGreenHit, transform.position , transform.rotation);		//Instantiate LaserGreenHit 
+			//Instantiate (LaserGreenHit, transform.position , transform.rotation);		//Instantiate LaserGreenHit 
 			Destroy(other.gameObject);													//Destroy the Other (PlayerLaser)
 			
 			//Check the Health if greater than 0
