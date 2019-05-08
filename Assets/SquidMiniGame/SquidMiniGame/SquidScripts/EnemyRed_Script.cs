@@ -20,8 +20,9 @@ public class EnemyRed_Script : MonoBehaviour
 	public float speed;						//Enemy Ship Speed
 	public int health;						//Enemy Ship Health
 	public GameObject LaserGreenHit;		//LaserGreenHit Prefab
-	public GameObject Explosion;			//Explosion Prefab
-	public int ScoreValue;					//How much the Enemy Ship give score after explosion
+	public GameObject Explosion;
+    public Boundary boundary;                 //Explosion Prefab
+    public int ScoreValue;					//How much the enemy give score after explosion
 	public GameObject shot;					//Fire Prefab
 	public Transform shotSpawn;				//Where the Fire Spawn
 	public float fireRate = 0.5F;			//Fire Rate between Shots
@@ -32,18 +33,25 @@ public class EnemyRed_Script : MonoBehaviour
 	// Use this for initialization
 	void Start () 
 	{
-		GetComponent<Rigidbody2D>().velocity = -1 * transform.up * speed;	//Enemy Ship Movement
-	}
+		GetComponent<Rigidbody2D>().velocity = -1 * transform.up * speed;
+                                                                            //Enemy  Movement
+    }
 
 	// Update is called once per frame
 	void Update () 
 	{
+        GetComponent<Rigidbody2D>().position = new Vector2
+            (
+                Mathf.Clamp(GetComponent<Rigidbody2D>().position.x, boundary.xMin, boundary.xMax),  //X
+                Mathf.Clamp(GetComponent<Rigidbody2D>().position.y, boundary.yMin, boundary.yMax)    //Y
+            );
+    
 		//Excute When the Current Time is bigger than the nextFire time
 		if (Time.time > nextFire)
 		{
-			nextFire = Time.time + fireRate; 									//Increment nextFire time with the current system time + fireRate
-			Instantiate (shot , shotSpawn.position ,shotSpawn.rotation); 		//Instantiate fire shot 
-			GetComponent<AudioSource>().Play ();														//Play Fire sound
+			//nextFire = Time.time + fireRate; 									//Increment nextFire time with the current system time + fireRate
+			//Instantiate (shot , shotSpawn.position ,shotSpawn.rotation); 		//Instantiate fire shot 
+			//GetComponent<AudioSource>().Play ();														//Play Fire sound
 		}
 	}
 
