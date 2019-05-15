@@ -18,10 +18,7 @@ public class Level21 : GameController_Script
     {
         text = text.GetComponent<Text>();
         text.text = "00:" + (victorTime - (int)countTime).ToString();
-        StartCoroutine(asteroidSpawnWaves());   //Start IEnumerator function
-        StartCoroutine(enemyBlueSpawnWaves());      //Start IEnumerator function
-        StartCoroutine(enemyGreenSpawnWaves()); //Start IEnumerator function
-        StartCoroutine(enemyRedSpawnWaves());		//Start IEnumerator function
+        StartCoroutine(enemyGreenSpawnWaves());
     }
     public void FixedUpdate()
     {
