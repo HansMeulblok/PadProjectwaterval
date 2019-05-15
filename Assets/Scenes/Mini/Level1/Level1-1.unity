@@ -10589,7 +10589,7 @@ MonoBehaviour:
   asteroid:
     asteroidBigObj: {fileID: 100000, guid: 17e2d1de305834503adc5a87d7d05b8b, type: 3}
     Count: 2
-    SpawnWait: 1
+    SpawnWait: 2
     StartWait: 2
     WaveWait: 3
   enemyBlue:
@@ -10611,6 +10611,9 @@ MonoBehaviour:
     StartWait: 0
     WaveWait: 0
   spawnValues: {x: 3, y: 6}
+  SceneName: 
+  currentScene:
+    m_Handle: 0
   victorTime: 40
   text: {fileID: 352559134}
   arrowKeys: {fileID: 572806930}
