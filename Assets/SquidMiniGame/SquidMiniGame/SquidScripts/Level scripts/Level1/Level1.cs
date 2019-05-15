@@ -17,7 +17,7 @@ public class Level1 : GameController_Script
     {
         PlayerPrefs.SetInt("Level", 6);
         text = text.GetComponent<Text>();
-        text.text = "00:40";
+        text.text = "01:00";
     }
     public void FixedUpdate()
     {

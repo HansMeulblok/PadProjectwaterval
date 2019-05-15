@@ -66,19 +66,11 @@ public class Player_Script : MonoBehaviour
 	void OnTriggerEnter2D(Collider2D other)
 	{
 		//Excute if the object tag was equal to one of these
-		if(other.tag == "Enemy" || other.tag == "Asteroid" || other.tag == "EnemyShot" || other.tag == "SeaWeed") 
+		if(other.tag == "Enemy" || other.tag == "Asteroid" || other.tag == "EnemyShot") 
 		{
-            if (other.tag == "SeaWeed")
-            {
-                Destroy(other.gameObject);
-                SharedValues_Script.seaScore += 1;
-            }
-            else
-            {
-                Instantiate(Explosion, transform.position, transform.rotation);                 //Instantiate Explosion
-                SharedValues_Script.gameover = true;                                            //Trigger That its a GameOver
-                Destroy(gameObject);                                                            //Destroy Player Ship Object
-            }
+			Instantiate (Explosion, transform.position , transform.rotation); 				//Instantiate Explosion
+			SharedValues_Script.gameover = true; 											//Trigger That its a GameOver
+			Destroy(gameObject); 															//Destroy Player Ship Object
 		}
 	}
     void Fire()

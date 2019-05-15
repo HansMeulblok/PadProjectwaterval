@@ -11,7 +11,6 @@
 
 using UnityEngine;
 using System.Collections;
-using UnityEngine.SceneManagement;
 
 //Asteroid Properties
 [System.Serializable]
@@ -55,7 +54,6 @@ public class EnemyRed
 	public float SpawnWait;				//Time to wait before a new spawn
 	public float StartWait;				//Time to Start spawning
 	public float WaveWait;				//Time to wait till a new wave
-    
 }
 
 
@@ -67,22 +65,15 @@ public class GameController_Script : MonoBehaviour
 	public EnemyGreen enemyGreen;		//make an Object from Class enemyGreen
 	public EnemyRed enemyRed;			//make an Object from Class enemyRed
 	public Vector2 spawnValues;         //Store spawning (x,y) values
-    public string SceneName;
-    public Scene currentScene;
 
     // Use this for initialization
     public virtual void Start ()
-
 	{
-        
-        StartCoroutine (asteroidSpawnWaves());  	//Start IEnumerator function
+		StartCoroutine (asteroidSpawnWaves());  	//Start IEnumerator function
 		StartCoroutine (enemyBlueSpawnWaves());		//Start IEnumerator function
 		StartCoroutine (enemyGreenSpawnWaves());	//Start IEnumerator function
-		StartCoroutine (enemyRedSpawnWaves());      //Start IEnumerator function
-        currentScene = SceneManager.GetActiveScene();
-        SceneName = currentScene.name; 
-        
-    }
+		StartCoroutine (enemyRedSpawnWaves());		//Start IEnumerator function
+	}
 
 	// Update is called once per frame
 	public virtual void Update () 
@@ -92,9 +83,9 @@ public class GameController_Script : MonoBehaviour
 		{
             if(PlayerPrefs.GetInt("Level") == 5)
             {
-                UnityEngine.SceneManagement.SceneManager.LoadScene(SceneName);
+                UnityEngine.SceneManagement.SceneManager.LoadScene(4);
             }else
-            UnityEngine.SceneManagement.SceneManager.LoadScene(PlayerPrefs.GetInt("Level")-1);		
+            UnityEngine.SceneManagement.SceneManager.LoadScene(PlayerPrefs.GetInt("Level")-1);		//Load Level 4 (same Level) to make a restart
 		}
         if (Input.GetKey(KeyCode.Escape))
         {
