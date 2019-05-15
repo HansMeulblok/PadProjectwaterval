@@ -42,7 +42,7 @@ public class EnemyRed_Script : MonoBehaviour
 	void Update () 
 	{
 
-        if(GetComponent<Rigidbody2D>().position.x <= boundary.xMin || GetComponent<Rigidbody2D>().position.x >= boundary.xMax)
+        if (GetComponent<Rigidbody2D>().position.x <= boundary.xMin || GetComponent<Rigidbody2D>().position.x >= boundary.xMax)
         {
             GetComponent<Rigidbody2D>().velocity *= bounce;
         }

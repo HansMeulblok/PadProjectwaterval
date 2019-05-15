@@ -136,14 +136,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   health: 2
-  LaserGreenHit: {fileID: 100000, guid: 7843e77eb83984643ab054e4814aff64, type: 3}
-  Explosion: {fileID: 100012, guid: 384371afbb4354cc9a3fc68eab303756, type: 3}
-  ScoreValue: 3
   boundary:
     xMin: -3
     xMax: 3
     yMin: -4.5
     yMax: 2
+  Explosion: {fileID: 100012, guid: 384371afbb4354cc9a3fc68eab303756, type: 3}
+  ScoreValue: 3
 --- !u!82 &8200000
 AudioSource:
   m_ObjectHideFlags: 0
