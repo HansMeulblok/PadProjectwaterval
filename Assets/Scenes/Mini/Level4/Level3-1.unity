@@ -704,7 +704,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -10
   m_Sprite: {fileID: 21300000, guid: 48e0cf9db67c6f441b7ba25f43556d73, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.504717, b: 0.9891223, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -761,15 +761,15 @@ MonoBehaviour:
   asteroid:
     asteroidBigObj: {fileID: 100000, guid: 42116f8b2b84e5540b7f9f3f4a24b012, type: 3}
     Count: 1
-    SpawnWait: 4
-    StartWait: 8
-    WaveWait: 8
+    SpawnWait: 3
+    StartWait: 4
+    WaveWait: 4
   enemyBlue:
-    enemyBlueObj: {fileID: 0}
-    Count: 0
-    SpawnWait: 0
-    StartWait: 0
-    WaveWait: 0
+    enemyBlueObj: {fileID: 100000, guid: 5f78677f7bc82419892779d27c9f79c0, type: 3}
+    Count: 1
+    SpawnWait: 2
+    StartWait: 1
+    WaveWait: 2
   enemyGreen:
     enemyGreenObj: {fileID: 0}
     Count: 0
@@ -779,16 +779,16 @@ MonoBehaviour:
   enemyRed:
     enemyRedObj: {fileID: 100000, guid: 2c6a51861d651441dbe2f230220bff07, type: 3}
     Count: 1
-    SpawnWait: 1
+    SpawnWait: 2
     StartWait: 1
-    WaveWait: 1
+    WaveWait: 2
   spawnValues: {x: 3, y: 6}
   SceneName: 
   currentScene:
     m_Handle: 0
   VictoryText: {fileID: 1761624726}
   ContinueText: {fileID: 516083257}
-  victorScore: 5
+  victorScore: 10
   text: {fileID: 953914484}
 --- !u!82 &1122116788
 AudioSource:

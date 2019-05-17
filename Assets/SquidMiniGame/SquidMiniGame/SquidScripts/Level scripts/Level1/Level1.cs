@@ -25,6 +25,9 @@ public class Level1 : GameController_Script
         {
             tutorialActive = false;
             StartCoroutine(asteroidSpawnWaves());
+            StartCoroutine(enemyBlueSpawnWaves());
+            StartCoroutine(enemyGreenSpawnWaves());
+            StartCoroutine(enemyRedSpawnWaves());
             Destroy(arrowKeys);
         }
         if (tutorialActive == false)
