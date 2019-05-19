@@ -24,36 +24,36 @@ EditorBuildSettings:
     path: Assets/SquidMiniGame/SquidMiniGame/SquidLevels/Scene_01.unity
     guid: ed3bd0e40cb5e46dcb30a1f1ccf56ba2
   - enabled: 1
-    path: Assets/Scenes/Mini/Level1/Level1-1.unity
+    path: Assets/Scenes/Mini/Wereld 1/Level1-1.unity
     guid: df1686203d7e96441aefe54f8b669dc4
   - enabled: 1
-    path: Assets/Scenes/Mini/Level1/Inbetween.unity
+    path: Assets/Scenes/Mini/Wereld 1/Inbetween.unity
     guid: f491cf9a18b019c49bfc0f105e256fc7
   - enabled: 1
-    path: Assets/Scenes/Mini/Level1/Level1-2.unity
+    path: Assets/Scenes/Mini/Wereld 1/Level1-2.unity
     guid: fc9bc9e6c655ee94daf17b6b612f9c03
   - enabled: 1
-    path: Assets/Scenes/Mini/Level1/Level1-3.unity
+    path: Assets/Scenes/Mini/Wereld 1/Level1-3.unity
     guid: a9e83b7b875976d48b0c955a26a49a37
   - enabled: 1
-    path: Assets/Scenes/Mini/Level1/Level1-4.unity
+    path: Assets/Scenes/Mini/Wereld 1/Level1-4.unity
     guid: abf9d4a29d1c9fd4ca2605dcbe2c7bd5
   - enabled: 1
-    path: Assets/Scenes/Mini/Level1/Level1-5.unity
+    path: Assets/Scenes/Mini/Wereld 1/Level1-5.unity
     guid: aa93e0d2d52dabe439213bdf00856ecc
   - enabled: 1
-    path: Assets/Scenes/Mini/Level2/Level2-1.unity
+    path: Assets/Scenes/Mini/Wereld 2/Level2-1.unity
     guid: f9b212a831210f84690b70dab5d98407
   - enabled: 1
-    path: Assets/Scenes/Mini/Level2/Level2-2.unity
+    path: Assets/Scenes/Mini/Wereld 2/Level2-2.unity
     guid: 5b5f8452f1d873443be491981811f2e0
   - enabled: 1
-    path: Assets/Scenes/Mini/Level2/Level2-3.unity
+    path: Assets/Scenes/Mini/Wereld 2/Level2-3.unity
     guid: c8b7c2f2959df5b46b69ef45bf7fc22b
   - enabled: 1
-    path: Assets/Scenes/Mini/Level2/Level2-4.unity
+    path: Assets/Scenes/Mini/Wereld 2/Level2-4.unity
     guid: d840c15cb15a8e045a9abed75b3eb2b3
   - enabled: 1
-    path: Assets/Scenes/Mini/Level2/Level2-5.unity
+    path: Assets/Scenes/Mini/Wereld 2/Level2-5.unity
     guid: d4ebc3db583e10c4a9030078fd23ae3b
   m_configObjects: {}
