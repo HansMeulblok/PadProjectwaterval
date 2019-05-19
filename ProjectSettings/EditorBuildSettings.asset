@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: c30c42977d933024eb61266e45a9b6de
   - enabled: 1
-    path: Assets/Scenes/Levelselecter.unity
+    path: Assets/Scenes/Levelselect/Levelselecter.unity
     guid: 4c8ca05be4a5e4645ad2f766d8e45ed6
   - enabled: 1
     path: Assets/Scenes/Level1.unity
@@ -59,4 +59,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levelselect/World_1.unity
     guid: a7f600577041a08418f20dce529edcab
+  - enabled: 1
+    path: Assets/Scenes/Levelselect/World_3.unity
+    guid: 3b08a4124c1eabf4d8614ae09fac7a37
+  - enabled: 1
+    path: Assets/Scenes/Mini/Wereld 3/Level3-1.unity
+    guid: 1b78550c2e6f6bf4f99325f271ef0f88
+  - enabled: 1
+    path: Assets/Scenes/Mini/Wereld 3/Level3-2.unity
+    guid: 77f6ba929ce8fb24c87059cf94ce4c25
+  - enabled: 1
+    path: Assets/Scenes/Mini/Wereld 3/Level3-3.unity
+    guid: 13fdc904109207b43943ce89fa054aee
+  - enabled: 1
+    path: Assets/Scenes/Mini/Wereld 3/Level3-4.unity
+    guid: 960c14a20adb397419d75957ae7bb0f1
+  - enabled: 1
+    path: Assets/Scenes/Mini/Wereld 3/Level3-5.unity
+    guid: 338b8a54b8ba9014d8c81c10eb568896
   m_configObjects: {}
