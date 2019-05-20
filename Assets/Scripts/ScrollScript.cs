@@ -34,12 +34,12 @@ public class ScrollScript : MonoBehaviour
                     transform.position += new Vector3(0, 19.2f * 3f, 0);
                 break;
             case "IndustrieBackground":
-                if (transform.position.y < -51.250401)
-                    transform.position += new Vector3(0, 51.250401f * 3f, 0);
+                if (transform.position.y < -99.84-50)
+                    transform.position += new Vector3(0, 99.84f * 3f, 0);
                 break;
             case "RuinBackground":
-                if (transform.position.y < -51.250401)
-                    transform.position += new Vector3(0, 51.250401f * 3f, 0);
+                if (transform.position.y < -50.009-6)
+                    transform.position += new Vector3(0, 50.009f * 3f, 0);
                 break;
         }
 
