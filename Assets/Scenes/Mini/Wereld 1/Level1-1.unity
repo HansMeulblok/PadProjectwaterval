@@ -940,10 +940,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 6
   boundary:
-    xMin: -3
-    xMax: 3
-    yMin: -4.5
-    yMax: 2
+    xMin: -3.5
+    xMax: 3.5
+    yMin: -4.7
+    yMax: 4.7
   shot: {fileID: 100000, guid: 700afb1ead8ff413d942a57a6687213d, type: 3}
   shotSpawn: {fileID: 68413081}
   fireRate: 0.3

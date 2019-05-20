@@ -137,8 +137,8 @@ MonoBehaviour:
   speed: 2
   health: 2
   boundary:
-    xMin: -3
-    xMax: 3
+    xMin: -3.7
+    xMax: 3.7
     yMin: -4.5
     yMax: 2
   Explosion: {fileID: 100012, guid: 384371afbb4354cc9a3fc68eab303756, type: 3}
