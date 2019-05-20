@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Level1 : GameController_Script
 {
-
+    public int sceneId;
     public float victorTime = 20.0f;
     public Text text;
     public GameObject arrowKeys;
@@ -15,9 +15,9 @@ public class Level1 : GameController_Script
     // Start is called before the first frame update
     public override void Start()
     {
-        PlayerPrefs.SetInt("Level", 6);
         text = text.GetComponent<Text>();
         text.text = "00:40";
+        PlayerPrefs.SetInt("Level", sceneId);
     }
     public void FixedUpdate()
     {

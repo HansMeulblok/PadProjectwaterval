@@ -8,12 +8,14 @@ public class Level13 : GameController_Script
     public GUIText VictoryText;             //GUI Victory
     public GUIText ContinueText; 		    //GUI NextLvl
 
+    public int sceneId;
     public int victorScore = 30;
     public Text text;
     private bool victory = false;
     // Start is called before the first frame update
     public override void Start()
     {
+        PlayerPrefs.SetInt("Level", sceneId);
         text = text.GetComponent<Text>();
         text.text = victorScore.ToString();
         StartCoroutine(asteroidSpawnWaves());

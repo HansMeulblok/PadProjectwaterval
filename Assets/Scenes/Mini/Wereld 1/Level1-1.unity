@@ -278,27 +278,33 @@ GameObject:
   m_Component:
   - component: {fileID: 360748235}
   - component: {fileID: 360748236}
+  - component: {fileID: 360748237}
   m_Layer: 0
   m_Name: WaterfallRocksandersom (2)
-  m_TagString: Untagged
+  m_TagString: DefaultBackground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &360748235
-Transform:
+--- !u!224 &360748235
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 360748234}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0001, y: 7.679, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
-  m_Father: {fileID: 550826971}
-  m_RootOrder: 1
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -9.230499, y: 42.545002}
+  m_SizeDelta: {x: 1.92, y: 3.84}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &360748236
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -347,6 +353,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &360748237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360748234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ce958686df95be448c40bd60b17150d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &550826969
 GameObject:
   m_ObjectHideFlags: 0
@@ -360,7 +378,7 @@ GameObject:
   - component: {fileID: 550826972}
   m_Layer: 0
   m_Name: WaterfallRocksandersom
-  m_TagString: Untagged
+  m_TagString: DefaultBackground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -423,11 +441,9 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -9.23, y: 4.15, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 5}
-  m_Children:
-  - {fileID: 1816369040}
-  - {fileID: 360748235}
+  m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &550826972
 MonoBehaviour:
@@ -549,7 +565,7 @@ RectTransform:
   - {fileID: 352559133}
   - {fileID: 572806931}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1314,6 +1330,7 @@ MonoBehaviour:
   SceneName: 
   currentScene:
     m_Handle: 0
+  sceneId: 6
   victorTime: 40
   text: {fileID: 352559134}
   arrowKeys: {fileID: 572806930}
@@ -1458,9 +1475,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1660903909}
   - component: {fileID: 1660903910}
+  - component: {fileID: 1660903911}
   m_Layer: 0
   m_Name: WaterfallRocks (1)
-  m_TagString: Untagged
+  m_TagString: DefaultBackground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1473,11 +1491,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1660903908}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.838, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 9.19, y: 23.34, z: 0}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
-  m_Father: {fileID: 2088791773}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1660903910
 SpriteRenderer:
@@ -1527,6 +1545,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1660903911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660903908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ce958686df95be448c40bd60b17150d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1703596484
 GameObject:
   m_ObjectHideFlags: 0
@@ -1592,9 +1622,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1816369040}
   - component: {fileID: 1816369041}
+  - component: {fileID: 1816369042}
   m_Layer: 0
   m_Name: WaterfallRocksandersom (1)
-  m_TagString: Untagged
+  m_TagString: DefaultBackground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1607,11 +1638,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1816369039}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.839, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -9.23, y: 23.345, z: 0}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
-  m_Father: {fileID: 550826971}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1816369041
 SpriteRenderer:
@@ -1661,6 +1692,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1816369042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816369039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ce958686df95be448c40bd60b17150d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1891684530
 GameObject:
   m_ObjectHideFlags: 0
@@ -1725,7 +1768,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2013866742
 GameObject:
@@ -1792,9 +1835,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2018015221}
   - component: {fileID: 2018015222}
+  - component: {fileID: 2018015223}
   m_Layer: 0
   m_Name: WaterfallRocks (2)
-  m_TagString: Untagged
+  m_TagString: DefaultBackground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1807,11 +1851,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2018015220}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 7.6785, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 9.19, y: 42.542503, z: 0}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
-  m_Father: {fileID: 2088791773}
-  m_RootOrder: 1
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2018015222
 SpriteRenderer:
@@ -1861,6 +1905,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2018015223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2018015220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ce958686df95be448c40bd60b17150d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2088791771
 GameObject:
   m_ObjectHideFlags: 0
@@ -1874,7 +1930,7 @@ GameObject:
   - component: {fileID: 2088791774}
   m_Layer: 0
   m_Name: WaterfallRocks
-  m_TagString: Untagged
+  m_TagString: DefaultBackground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1937,11 +1993,9 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 9.19, y: 4.15, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 5}
-  m_Children:
-  - {fileID: 1660903909}
-  - {fileID: 2018015221}
+  m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2088791774
 MonoBehaviour:

@@ -1,11 +1,16 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class MainMent : MonoBehaviour
 {
+    public void Start()
+    {
 
+    }
     public void MainMenu()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);

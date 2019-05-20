@@ -90,9 +90,9 @@ public class GameController_Script : MonoBehaviour
 		//Excute when keyboard button R pressed
 		if(Input.GetKey("r"))
 		{
-            if(PlayerPrefs.GetInt("Level") == 5)
+            if(PlayerPrefs.GetInt("Level") == 6)
             {
-                UnityEngine.SceneManagement.SceneManager.LoadScene(SceneName);
+                UnityEngine.SceneManagement.SceneManager.LoadScene(4);
             }else
             UnityEngine.SceneManagement.SceneManager.LoadScene(PlayerPrefs.GetInt("Level")-1);		
 		}

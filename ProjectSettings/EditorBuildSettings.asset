@@ -57,12 +57,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Mini/Wereld 2/Level2-5.unity
     guid: d4ebc3db583e10c4a9030078fd23ae3b
   - enabled: 1
-    path: Assets/Scenes/Levelselect/World_1.unity
-    guid: a7f600577041a08418f20dce529edcab
-  - enabled: 1
-    path: Assets/Scenes/Levelselect/World_3.unity
-    guid: 3b08a4124c1eabf4d8614ae09fac7a37
-  - enabled: 1
     path: Assets/Scenes/Mini/Wereld 3/Level3-1.unity
     guid: 1b78550c2e6f6bf4f99325f271ef0f88
   - enabled: 1
@@ -78,9 +72,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Mini/Wereld 3/Level3-5.unity
     guid: 338b8a54b8ba9014d8c81c10eb568896
   - enabled: 1
-    path: Assets/Scenes/Levelselect/World_2.unity
-    guid: 8a6429702c90b654d9e709565ffcf06f
-  - enabled: 1
     path: Assets/Scenes/Mini/Wereld 4/Level4-1.unity
     guid: e0ce1c73f80f2b84d852e6c289cc775b
   - enabled: 1
@@ -95,4 +86,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Mini/Wereld 4/Level4-5.unity
     guid: 98064f24c05b55d4591a64b0d8d47cbe
+  - enabled: 1
+    path: Assets/Scenes/Levelselect/World_1.unity
+    guid: a7f600577041a08418f20dce529edcab
+  - enabled: 1
+    path: Assets/Scenes/Levelselect/World_2.unity
+    guid: 8a6429702c90b654d9e709565ffcf06f
+  - enabled: 1
+    path: Assets/Scenes/Levelselect/World_3.unity
+    guid: 3b08a4124c1eabf4d8614ae09fac7a37
   m_configObjects: {}

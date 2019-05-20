@@ -880,6 +880,7 @@ MonoBehaviour:
     m_Handle: 0
   VictoryText: {fileID: 1761624726}
   ContinueText: {fileID: 516083257}
+  sceneId: 25
   victorScore: 30
   text: {fileID: 953914484}
 --- !u!82 &1122116788

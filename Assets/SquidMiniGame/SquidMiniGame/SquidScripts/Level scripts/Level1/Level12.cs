@@ -10,6 +10,7 @@ public class Level12 : GameController_Script
 
     public int victorScore = 10;
     public Text text;
+    public int sceneId;
     public GameObject Spatie;
     private bool tutorialActive = true;
     private bool victory = false;
@@ -18,6 +19,7 @@ public class Level12 : GameController_Script
     {
         text = text.GetComponent<Text>();
         text.text = victorScore.ToString();
+        PlayerPrefs.SetInt("Level", sceneId);
     }
 
     public void FixedUpdate()
