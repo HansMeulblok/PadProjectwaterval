@@ -98,4 +98,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levelselect/World_4.unity
     guid: 9a571cd48295ae949a7efc07299b4ac9
+  - enabled: 1
+    path: Assets/Scenes/Login/LoginScreen.unity
+    guid: 564e5d4633e41f64eb710f24d303ec6a
+  - enabled: 1
+    path: Assets/Scenes/Login/RegisterScreen.unity
+    guid: 3d942773dac995c409dcda6b82bf9996
+  - enabled: 1
+    path: Assets/Scenes/Login/LoginMenu.unity
+    guid: 8d6a741b91b7b684e86972cfdcffafe2
   m_configObjects: {}
