@@ -38,8 +38,10 @@ public class PainMeterActive : MonoBehaviour
         }
         if (counter == 6)
         {
-
-            UnityEngine.SceneManagement.SceneManager.LoadScene("Level1-1");
+            if (PlayerPrefs.GetInt("Level") != 0)
+                UnityEngine.SceneManagement.SceneManager.LoadScene("Levelselecter");
+            else
+                UnityEngine.SceneManagement.SceneManager.LoadScene(PlayerPrefs.GetInt("Level"));
         }
 
        
