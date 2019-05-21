@@ -1331,7 +1331,7 @@ MonoBehaviour:
   currentScene:
     m_Handle: 0
   sceneId: 6
-  victorTime: 40
+  victorTime: 30
   text: {fileID: 352559134}
   arrowKeys: {fileID: 572806930}
 --- !u!4 &1448049119

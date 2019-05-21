@@ -1541,19 +1541,19 @@ MonoBehaviour:
     Count: 1
     SpawnWait: 3
     StartWait: 4
-    WaveWait: 4
+    WaveWait: 7
   enemyBlue:
     enemyBlueObj: {fileID: 100000, guid: 5f78677f7bc82419892779d27c9f79c0, type: 3}
     Count: 1
     SpawnWait: 0
     StartWait: 3
-    WaveWait: 4
+    WaveWait: 6
   enemyGreen:
     enemyGreenObj: {fileID: 100000, guid: 8a4fbd2c6fc1a4097909290d814890f3, type: 3}
     Count: 1
     SpawnWait: 0
     StartWait: 3
-    WaveWait: 6
+    WaveWait: 8
   enemyRed:
     enemyRedObj: {fileID: 100000, guid: 2c6a51861d651441dbe2f230220bff07, type: 3}
     Count: 0

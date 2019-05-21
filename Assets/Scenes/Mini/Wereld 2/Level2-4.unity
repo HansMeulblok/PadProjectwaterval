@@ -1847,7 +1847,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 33.6, y: -25.3}
+  m_AnchoredPosition: {x: 33.6, y: -25.300049}
   m_SizeDelta: {x: 106.32, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &953914484
@@ -2122,8 +2122,8 @@ MonoBehaviour:
     asteroidBigObj: {fileID: 100000, guid: 42116f8b2b84e5540b7f9f3f4a24b012, type: 3}
     Count: 1
     SpawnWait: 4
-    StartWait: 8
-    WaveWait: 8
+    StartWait: 6
+    WaveWait: 4
   enemyBlue:
     enemyBlueObj: {fileID: 0}
     Count: 0

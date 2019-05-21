@@ -1314,7 +1314,7 @@ MonoBehaviour:
     Count: 1
     SpawnWait: 1
     StartWait: 1
-    WaveWait: 1
+    WaveWait: 3
   enemyGreen:
     enemyGreenObj: {fileID: 0}
     Count: 0
@@ -1326,7 +1326,7 @@ MonoBehaviour:
     Count: 2
     SpawnWait: 1
     StartWait: 1
-    WaveWait: 1
+    WaveWait: 3
   spawnValues: {x: 3, y: 6}
   SceneName: 
   currentScene:
