@@ -9,7 +9,6 @@ public class MainMent : MonoBehaviour
 {
     public void Start()
     {
-
     }
     public void MainMenu()
     {
