@@ -5,10 +5,10 @@ using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
-    public Text nameText;
-    public Text dialogueText;
+    public Text nameText;           // naam van karakter
+    public Text dialogueText;       // dialoog voor karakter
 
-    public Animator animator;
+    public Animator animator;       // pop up van spraak wolk  
 
     private Queue<string> sentences;
 
@@ -16,36 +16,27 @@ public class DialogueManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        sentences = new Queue<string>(); 
-    }
-
-    public void StartDialogue(Dialogue dialogue)
-    {
-        animator.SetBool("IsOpen", true);
-
-        nameText.text = dialogue.name; 
-
-        sentences.Clear();
+        sentences = new Queue<string>();        // nieuwe queue aan dialoog dat bewerkt kan worden in de editor
 
         foreach (string sentence in dialogue.sentences)
         {
-            sentences.Enqueue(sentence);
+            sentences.Enqueue(sentence);       // zet de dialoog zinnen in de queue
         }
 
-        DisplayNextSentence();
+        DisplayNextSentence();              // de volgende zin weergeven zodra hij aangeroepen word
     }
 
     public void DisplayNextSentence()
     {
-        if (sentences.Count == 0)
+        if (sentences.Count == 0)                   // de dialoog eindigen als er geen zinnen meer in de queue staan
         {
             EndDialogue();
           
             return;
         }
 
-        string sentence = sentences.Dequeue();
-        StopAllCoroutines();
+        string sentence = sentences.Dequeue();    
+        StopAllCoroutines();                     // stopt de hele dialoog
         StartCoroutine(TypeSentence(sentence));
     }
 
@@ -53,7 +44,7 @@ public class DialogueManager : MonoBehaviour
 
     IEnumerator TypeSentence (string sentence)
         {
-        dialogueText.text = "";
+        dialogueText.text = "";                              // zorgt ervoor dat de zinnen in de queue letter voor letter worden weergeven. 
         foreach (char letter in sentence.ToCharArray()) 
         {
             dialogueText.text += letter;
@@ -63,7 +54,7 @@ public class DialogueManager : MonoBehaviour
 
     void EndDialogue()
     {
-        animator.SetBool("IsOpen", false);
+        animator.SetBool("IsOpen", false);                   // stopt de animatie wanneer de dialoog aaf is. 
     }
 
     
