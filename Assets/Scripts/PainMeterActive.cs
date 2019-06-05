@@ -19,17 +19,13 @@ public class PainMeterActive : MonoBehaviour
             ContinueButton.SetActive(false);
 
         }
-
-
     }
 
     void Update()
     {
         if(counter == 4)
         {
-           
             Gauge1.SetActive(true);
-            
         }
         if (counter == 5)
         {
@@ -43,7 +39,6 @@ public class PainMeterActive : MonoBehaviour
             else
                 UnityEngine.SceneManagement.SceneManager.LoadScene(PlayerPrefs.GetInt("Level"));
         }
-
        
         if (Input.GetMouseButtonDown(0))
         {
