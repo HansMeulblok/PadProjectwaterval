@@ -16,6 +16,16 @@ public class DialogueManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        sentences = new Queue<string>();
+    }
+
+    public void StartDialogue(Dialogue dialogue)
+    {
+        animator.SetBool("IsOpen", true);
+
+        nameText.text = dialogue.name;
+
+        sentences.Clear();
         sentences = new Queue<string>();        // nieuwe queue aan dialoog dat bewerkt kan worden in de editor
 
         foreach (string sentence in dialogue.sentences)
