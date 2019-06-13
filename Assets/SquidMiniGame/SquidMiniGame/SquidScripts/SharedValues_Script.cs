@@ -1,20 +1,11 @@
-﻿/// <summary>
-/// 2D Space Shooter Example
-/// By Bug Games www.Bug-Games.net
-/// Programmer: Danar Kayfi - Twitter: @DanarKayfi
-/// Special Thanks to Kenney for the CC0 Graphic Assets: www.kenney.nl
-/// 
-/// This is the SharedValues Script:
-/// - Shared Value Script between all other scripts
-/// - In-Game & GameOver GUI
-/// 
-/// </summary>
-
+﻿
 using UnityEngine;
 using System.Collections;
 
 public class SharedValues_Script : MonoBehaviour 
 {
+
+    // we should replace the GUI parts
 	//Public Var
 	public GUIText scoreText; 				//GUI Score
 	public GUIText GameOverText; 			//GUI GameOver
