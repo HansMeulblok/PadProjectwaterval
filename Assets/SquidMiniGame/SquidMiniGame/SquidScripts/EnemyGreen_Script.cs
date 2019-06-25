@@ -1,15 +1,4 @@
-﻿/// <summary>
-/// 2D Space Shooter Example
-/// By Bug Games www.Bug-Games.net
-/// Programmer: Danar Kayfi - Twitter: @DanarKayfi
-/// Special Thanks to Kenney for the CC0 Graphic Assets: www.kenney.nl
-/// 
-/// This is the EnemyGreen Script:
-/// - Enemy Ship Movement/Health/Score
-/// - Explosion Trigger
-/// 
-/// </summary>
-
+﻿
 using UnityEngine;
 using System.Collections;
 
@@ -17,11 +6,11 @@ public class EnemyGreen_Script : MonoBehaviour
 {
 
 	//Public Var
-	public float speed;						//Enemy Ship Speed
-	public int health;						//Enemy Ship Health
+	public float speed;						//Enemy Speed
+	public int health;						//Enemy Health
 	public GameObject LaserGreenHit;		//LaserGreenHit Prefab
 	public GameObject Explosion;			//Explosion Prefab
-	public int ScoreValue; 					//How much the Enemy Ship give score after explosion
+	public int ScoreValue; 					//How much the Enemy give score after explosion
 	public GameObject shot; 				//Fire Prefab
 	public Transform shotSpawn;				//Where the Fire Spawn
 	public float fireRate = 1F;				//Fire Rate between Shots
@@ -66,7 +55,7 @@ public class EnemyGreen_Script : MonoBehaviour
 			{
 				Instantiate (Explosion, transform.position , transform.rotation); 		//Instantiate Explosion
 				SharedValues_Script.score +=ScoreValue; 								//Increment score by ScoreValue
-				Destroy(gameObject); 													//Destroy The Object (Enemy Ship)
+				Destroy(gameObject); 													//Destroy The Object
 			}
 		}
 		

@@ -1,35 +1,21 @@
-﻿/// <summary>
-/// 2D Space Shooter Example
-/// By Bug Games www.Bug-Games.net
-/// Programmer: Danar Kayfi - Twitter: @DanarKayfi
-/// Special Thanks to Kenney for the CC0 Graphic Assets: www.kenney.nl
-/// 
-/// This is the Asteroid Script:
-/// - Normal & Angular Velocity
-/// - Hit/Explosion on Trigger Enter
-/// 
-/// </summary>
-
+﻿
 using UnityEngine;
 using System.Collections;
 
 public class Rock_Script : MonoBehaviour 
 {
 	//Public Var
-	public float maxTumble; 			//Maximum Speed of the angular velocity
-	public float minTumble; 			//Minimum Speed of the angular velocity
-	public float speed; 				//Asteroid Speed
-	public int health; 					//Asteroid Health (how much hit can it take)
-	public GameObject LaserGreenHit; 	//LaserGreenHit Prefab
+	
+	public float speed; 				//rock Speed
+	public int health; 					//rock set to infinite
+	public GameObject LaserGreenHit; 	//LaserHit Prefab
 	public GameObject Explosion; 		//Explosion Prefab
-	public int ScoreValue;              //How much the Asteroid give score after explosion
 
 
     // Use this for initialization
     void Start () 
 	{
-		//GetComponent<Rigidbody2D>().angularVelocity = Random.Range(minTumble, maxTumble); 		//Angular movement based on random speed values
-		GetComponent<Rigidbody2D>().velocity = -1 * transform.up * speed; 						//Negative Velocity to move down towards the player ship
+		GetComponent<Rigidbody2D>().velocity = -1 * transform.up * speed; 						//Negative Velocity to move down towards the player
    
     }
 
@@ -51,8 +37,7 @@ public class Rock_Script : MonoBehaviour
             if (health <= 0)
 			{
 				Instantiate (Explosion, transform.position , transform.rotation); 		//Instantiate Explosion
-				SharedValues_Script.score +=ScoreValue; 								//Increment score by ScoreValue
-				Destroy(gameObject); 													//Destroy the Asteroid
+				Destroy(gameObject); 													//Destroy rock
 			}
 		}
 	}

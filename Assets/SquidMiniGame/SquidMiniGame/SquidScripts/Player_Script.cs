@@ -1,17 +1,4 @@
-﻿/// <summary>
-/// 2D Space Shooter Example
-/// By Bug Games www.Bug-Games.net
-/// Programmer: Danar Kayfi - Twitter: @DanarKayfi
-/// Special Thanks to Kenney for the CC0 Graphic Assets: www.kenney.nl
-/// 
-/// This is the Player Ship Script:
-/// - Player Ship Movement
-/// - Fire Control
-/// - Screen Boundary Control
-/// - Explosion/Game Over Trigger
-/// 
-/// </summary>
-
+﻿
 using UnityEngine;
 using System.Collections;
 
@@ -24,7 +11,7 @@ public class Boundary
 public class Player_Script : MonoBehaviour 
 {
 	//Public Var
-	public float speed; 			//Player Ship Speed
+	public float speed; 			//Player Speed
 	public Boundary boundary; 		//make an Object from Class Boundary
 	public GameObject shot;			//Fire Prefab
 	public Transform shotSpawn;		//Where the Fire Spawn
@@ -51,7 +38,7 @@ public class Player_Script : MonoBehaviour
 		float moveHorizontal = Input.GetAxis ("Horizontal"); 				//Get if Any Horizontal Keys pressed
 		float moveVertical = Input.GetAxis ("Vertical");					//Get if Any Vertical Keys pressed
 		Vector2 movement = new Vector2 (moveHorizontal, moveVertical); 		//Put them in a Vector2 Variable (x,y)
-		GetComponent<Rigidbody2D>().velocity = movement * speed; 							//Add Velocity to the player ship rigidbody
+		GetComponent<Rigidbody2D>().velocity = movement * speed; 							//Add Velocity to the player rigidbody
         if (nextFire < 0.5)
             nextFire += Time.fixedDeltaTime;
 		//Lock the position in the screen by putting a boundaries
